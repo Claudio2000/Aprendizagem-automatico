@@ -10,7 +10,7 @@ data_X=evaluation_data.iloc[:,1:8]
 data_Y=evaluation_data.iloc[:,8:9]
 print(type(evaluation_data))
 print(type(data_X))
-loaded_model = p1.load(open('../white-wine_quality_predictor', 'rb'))
+loaded_model = p1.load(open('./abaloneprevisao', 'rb'))
 print("Coefficients: \n", loaded_model.coef_)
 y_pred=loaded_model.predict(data_X)
 z_pred=y_pred-data_Y
