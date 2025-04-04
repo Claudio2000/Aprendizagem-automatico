@@ -20,4 +20,4 @@ for x in out:
     print(x,data_preparation[x].values)
 loaded_model = p1.load(open('abalone.data', 'rb'))
 y_pred=loaded_model.predict(data_preparation)
-print("abalone data ",int(y_pred))l
+print("abalone data ",int(y_pred))
